@@ -6,7 +6,7 @@ class CustomTextFormAuth extends StatelessWidget {
       required this.hintText,
       required this.labelText,
       required this.iconData,
-       this.myController})
+      required this.myController})
       : super(key: key);
 
   final String hintText;

@@ -1,10 +1,10 @@
 import 'package:ecommerce/core/constant/routes.dart';
-import 'package:ecommerce/view/screen/auth/login.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 abstract class SignupController extends GetxController {
-  Signup();
+  signup();
+  goToCheckEmail();
   goToSignin();
 }
 
@@ -15,7 +15,7 @@ class SignupControllerImp extends SignupController {
   late TextEditingController password;
 
   @override
-  Signup() {}
+  signup() {}
 
 
   @override
@@ -34,6 +34,11 @@ class SignupControllerImp extends SignupController {
     phone.dispose();
     username.dispose();
     super.dispose();
+  }
+  
+  @override
+  goToCheckEmail() {
+    Get.offNamed(AppRoute.chackEmail);
   }
   
   @override

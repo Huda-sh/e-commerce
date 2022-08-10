@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 
 abstract class LoginController extends GetxController {
-  Login();
+  login();
   goToSignup();
   goToForgetPassword();
 }
@@ -13,7 +13,7 @@ class LoginControllerImp extends LoginController {
   late TextEditingController password;
 
   @override
-  Login() {}
+  login() {}
 
   @override
   goToSignup() {

@@ -74,7 +74,7 @@ class Signup extends StatelessWidget {
               height: 20.0,
             ),
             CustomTextFormAuth(
-              myController: controller.username,
+              myController: controller.password,
               hintText: "Enter Your Password",
               labelText: "Password",
               iconData: Icons.lock_outline_rounded,
@@ -85,7 +85,9 @@ class Signup extends StatelessWidget {
             ),
             CustomButtonAuth(
               text: "Sign up",
-              onPressed: () {},
+              onPressed: () {
+                controller.goToCheckEmail();
+              },
             ),
             const SizedBox(
               height: 10.0,

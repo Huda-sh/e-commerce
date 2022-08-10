@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:ecommerce/core/constant/routes.dart';
 import 'package:ecommerce/data/datasource/static/static.dart';
 import 'package:flutter/material.dart';

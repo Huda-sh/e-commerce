@@ -1,8 +1,8 @@
 import 'package:ecommerce/controller/Auth/success_signup_controller.dart';
 import 'package:flutter/material.dart';
-import '../../../core/constant/color.dart';
-import '../../widget/auth/custom_button_auth.dart';
-import '../../widget/auth/custom_text_body_auth.dart';
+import '../../../../core/constant/color.dart';
+import '../../../widget/auth/custom_button_auth.dart';
+import '../../../widget/auth/custom_text_body_auth.dart';
 
 class SuccessSignup extends StatelessWidget {
   const SuccessSignup({Key? key}) : super(key: key);

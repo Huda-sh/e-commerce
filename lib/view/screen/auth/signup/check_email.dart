@@ -3,9 +3,9 @@ import 'package:ecommerce/controller/Auth/check_email_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
 
-import '../../../core/constant/color.dart';
-import '../../widget/auth/custom_text_body_auth.dart';
-import '../../widget/auth/custom_text_title_auth.dart';
+import '../../../../core/constant/color.dart';
+import '../../../widget/auth/custom_text_body_auth.dart';
+import '../../../widget/auth/custom_text_title_auth.dart';
 
 class CheckEmail extends StatelessWidget {
   const CheckEmail({Key? key}) : super(key: key);

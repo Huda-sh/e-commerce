@@ -1,5 +1,6 @@
 import 'package:ecommerce/controller/Auth/success_signup_controller.dart';
 import 'package:flutter/material.dart';
+import 'package:get/utils.dart';
 import '../../../../core/constant/color.dart';
 import '../../../widget/auth/custom_button_auth.dart';
 import '../../../widget/auth/custom_text_body_auth.dart';
@@ -16,7 +17,7 @@ class SuccessSignup extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
         title: Text(
-          "Success Signup",
+          "38".tr,
           style: Theme.of(context)
               .textTheme
               .headline1!
@@ -34,14 +35,14 @@ class SuccessSignup extends StatelessWidget {
                 color: AppColor.primaryColor,
               ),
             ),
-            const CustomTextBodyAuth(
+            CustomTextBodyAuth(
                 text:
-                    "Sign up with You Email and Password Or Continue With Google"),
+                    "28".tr),
             const Spacer(),
             SizedBox(
               width: double.infinity,
               child: CustomButtonAuth(
-                text: "Go To Login",
+                text: "31".tr,
                 onPressed: () {
                   controller.goToLogin();
                 },

@@ -1,29 +1,24 @@
 import 'package:ecommerce/core/constant/imageasset.dart';
 import 'package:ecommerce/data/model/onboarding.dart';
+import 'package:get/utils.dart';
 
 List<OnBoardingModel> onBoardingList = [
   OnBoardingModel(
-    title: "Choose Product",
+    title: "2".tr,
     body:
-        "We have a 100k+ Products.\nChoose Your product from our \nE-commerce shop.",
+        "3".tr,
     image: AppImageAsset.OnBoardingImageOne,
   ),
   OnBoardingModel(
-    title: "Easy & Safe Payment",
+    title: "4".tr,
     body:
-        "Easy Checkout & Safe Payment \nmethod. Trusted by our Customers \nfrom all over the world.",
+        "5".tr,
     image: AppImageAsset.OnBoardingImageTwo,
   ),
   OnBoardingModel(
-    title: "Track Your Order",
+    title: "6".tr,
     body:
-        "Best Tracker has been used to \ntrack your order. You'll know where \nyour product is at the moment.",
+        "7".tr,
     image: AppImageAsset.OnBoardingImageThree,
-  ),
-  OnBoardingModel(
-    title: "Fast Delivery",
-    body:
-        "Reliable And Fast Delivery. We \nDeliver your product the fastest \nway possible",
-    image: AppImageAsset.OnBoardingImageFour,
   ),
 ];

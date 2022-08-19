@@ -20,7 +20,7 @@ class Signup extends StatelessWidget {
         elevation: 0.0,
         centerTitle: true,
         title: Text(
-          "Sign Up",
+          "9".tr,
           style: Theme.of(context)
               .textTheme
               .headline1!
@@ -32,21 +32,20 @@ class Signup extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 15.0),
         child: ListView(
           children: [
-            const CustomTextTitleAuth(text: "Welcome"),
+            CustomTextTitleAuth(text: "10".tr),
             const SizedBox(
               height: 10.0,
             ),
             CustomTextBodyAuth(
                 text:
-                    "Sign up with You Email and Password Or Continue With Google"
-                        .tr),
+                    "11".tr),
             const SizedBox(
               height: 20.0,
             ),
             CustomTextFormAuth(
               myController: controller.username,
-              hintText: "Enter Your Username",
-              labelText: "Username",
+              hintText: "23".tr,
+              labelText: "20".tr,
               iconData: Icons.person_outline,
               // myController: myController
             ),
@@ -55,8 +54,8 @@ class Signup extends StatelessWidget {
             ),
             CustomTextFormAuth(
               myController: controller.email,
-              hintText: "Enter Your Email",
-              labelText: "Email",
+              hintText: "12".tr,
+              labelText: "18".tr,
               iconData: Icons.email_outlined,
               // myController: myController
             ),
@@ -65,8 +64,8 @@ class Signup extends StatelessWidget {
             ),
             CustomTextFormAuth(
               myController: controller.phone,
-              hintText: "Enter Your Phone Number",
-              labelText: "Phone Number",
+              hintText: "22".tr,
+              labelText: "21".tr,
               iconData: Icons.phone_android_outlined,
               // myController: myController
             ),
@@ -75,8 +74,8 @@ class Signup extends StatelessWidget {
             ),
             CustomTextFormAuth(
               myController: controller.password,
-              hintText: "Enter Your Password",
-              labelText: "Password",
+              hintText: "13".tr,
+              labelText: "19".tr,
               iconData: Icons.lock_outline_rounded,
               // myController: myController
             ),
@@ -84,7 +83,7 @@ class Signup extends StatelessWidget {
               height: 35.0,
             ),
             CustomButtonAuth(
-              text: "Sign up",
+              text: "17".tr,
               onPressed: () {
                 controller.goToCheckEmail();
               },
@@ -93,8 +92,8 @@ class Signup extends StatelessWidget {
               height: 10.0,
             ),
             CustomBottomTextAauth(
-              textOne: "Already Have an Account?  ",
-              textTwo: "Sign in",
+              textOne: "25".tr,
+              textTwo: "26".tr,
               onTap: () {
                 controller.goToSignin();
               },

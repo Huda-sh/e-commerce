@@ -12,46 +12,38 @@ class ResetPassword extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    ResetPasswordControllerImp controller = Get.put(ResetPasswordControllerImp());
+    ResetPasswordControllerImp controller =
+        Get.put(ResetPasswordControllerImp());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        title: Text(
-          "Reset Password",
-          style: Theme.of(context)
-              .textTheme
-              .headline1!
-              .copyWith(color: AppColor.gray),
-        ),
+        // title: Text(
+        //   "Reset Password",
+        //   style: Theme.of(context)
+        //       .textTheme
+        //       .headline1!
+        //       .copyWith(color: AppColor.gray),
+        // ),
       ),
       body: Container(
         color: Colors.white,
         padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 15.0),
         child: ListView(
           children: [
-            const CustomTextTitleAuth(text: "New Password"),
-            const SizedBox(
-              height: 10.0,
-            ),
-            CustomTextBodyAuth(
-                text:
-                    "Please enter new password"
-                        .tr),
-            const SizedBox(
-              height: 20.0,
-            ),
+            CustomTextTitleAuth(text: "35".tr),
+            const SizedBox(height: 10.0),
+            CustomTextBodyAuth(text: "34".tr),
+            const SizedBox(height: 20.0),
             CustomTextFormAuth(
               myController: controller.password,
-              hintText: "Enter Your New Password",
+              hintText: "34".tr,
               labelText: "Password",
               iconData: Icons.lock_outline_rounded,
               // myController: myController
             ),
-            const SizedBox(
-              height: 20.0,
-            ),
+            const SizedBox(height: 20.0),
             CustomTextFormAuth(
               myController: controller.rePassword,
               hintText: "Re-enter Your New Password",
@@ -59,16 +51,13 @@ class ResetPassword extends StatelessWidget {
               iconData: Icons.lock_outline_rounded,
               // myController: myController
             ),
-            const SizedBox(
-              height: 35.0,
-            ),
+            const SizedBox(height: 35.0),
             CustomButtonAuth(
-              text: "Save",
+              text: "33".tr,
               onPressed: () {
                 controller.goToSuccessResetPassword();
               },
             ),
-            
           ],
         ),
       ),

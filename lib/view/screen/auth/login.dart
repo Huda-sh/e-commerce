@@ -14,14 +14,14 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   LoginControllerImp controller = Get.put(LoginControllerImp());
+    LoginControllerImp controller = Get.put(LoginControllerImp());
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
         title: Text(
-          "Sign In",
+          "9".tr,
           style: Theme.of(context)
               .textTheme
               .headline1!
@@ -35,23 +35,20 @@ class Login extends StatelessWidget {
           children: [
             const LogoAuth(),
             const SizedBox(
-              height: 20.0,
+              height: 15.0,
             ),
-            CustomTextTitleAuth(text: "Welcome_Back".tr),
+            CustomTextTitleAuth(text: "10".tr),
             const SizedBox(
               height: 10.0,
             ),
-            CustomTextBodyAuth(
-                text:
-                    "Sign in with You Email and Password Or Continue With Social Media"
-                        .tr),
+            CustomTextBodyAuth(text: "11".tr),
             const SizedBox(
               height: 20.0,
             ),
             CustomTextFormAuth(
               myController: controller.email,
-              hintText: "Enter Your Email",
-              labelText: "Email",
+              hintText: "12".tr,
+              labelText: "18".tr,
               iconData: Icons.email_outlined,
               // myController: myController
             ),
@@ -60,8 +57,8 @@ class Login extends StatelessWidget {
             ),
             CustomTextFormAuth(
               myController: controller.password,
-              hintText: "Enter Your Password",
-              labelText: "Password",
+              hintText: "13".tr,
+              labelText: "19".tr,
               iconData: Icons.lock_outline_rounded,
               // myController: myController
             ),
@@ -69,11 +66,11 @@ class Login extends StatelessWidget {
               height: 10.0,
             ),
             InkWell(
-              onTap: (){
+              onTap: () {
                 controller.goToForgetPassword();
               },
-              child: const Text(
-                "Forgot Password",
+              child: Text(
+                "14".tr,
                 textAlign: TextAlign.end,
               ),
             ),
@@ -81,17 +78,18 @@ class Login extends StatelessWidget {
               height: 15.0,
             ),
             CustomButtonAuth(
-              text: "Sign In",
+              text: "9".tr,
               onPressed: () {},
             ),
             const SizedBox(
               height: 10.0,
             ),
-            CustomBottomTextAauth(textOne: "Don't Have an Account?  ",
-            textTwo: "Sign up",
-            onTap: (){
-              controller.goToSignup();
-            },
+            CustomBottomTextAauth(
+              textOne: "16".tr,
+              textTwo: "17".tr,
+              onTap: () {
+                controller.goToSignup();
+              },
             ),
           ],
         ),

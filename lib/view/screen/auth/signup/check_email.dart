@@ -2,6 +2,7 @@
 import 'package:ecommerce/controller/Auth/check_email_controller.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/utils.dart';
 
 import '../../../../core/constant/color.dart';
 import '../../../widget/auth/custom_text_body_auth.dart';
@@ -18,27 +19,26 @@ class CheckEmail extends StatelessWidget {
         backgroundColor: Colors.white,
         elevation: 0.0,
         centerTitle: true,
-        title: Text(
-          "Verification Code",
-          style: Theme.of(context)
-              .textTheme
-              .headline1!
-              .copyWith(color: AppColor.gray),
-        ),
+        // title: Text(
+        //   "Verification Code",
+        //   style: Theme.of(context)
+        //       .textTheme
+        //       .headline1!
+        //       .copyWith(color: AppColor.gray),
+        // ),
       ),
       body: Container(
         color: Colors.white,
         padding: const EdgeInsets.symmetric(horizontal: 35.0, vertical: 15.0),
         child: ListView(
           children: [
-            const CustomTextTitleAuth(text: "Check Email"),
+            CustomTextTitleAuth(text: "27".tr),
             const SizedBox(
               height: 10.0,
             ),
-            const CustomTextBodyAuth(
+            CustomTextBodyAuth(
                 text:
-                    //TODO: make email dynamic
-                    "Please Enter The Digit Code Sent To wael@gmail.com"),
+                    "29".tr),
             const SizedBox(
               height: 20.0,
             ),
